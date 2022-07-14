@@ -1,0 +1,13 @@
+Javascript it is a language which is understance by all browser
+it's the only language which you can used for frontend
+
+we will talks about the backedn which we used Node js. which is started in 2009 it allows the chrome v8 engine to run 
+on the back end.
+
+At the end of the course you will be a full-stack software engineers.
+
+Schedule:
+
+week1: Backend 
+week2: Frontend (and backend)
+week3: Personal Projects.
