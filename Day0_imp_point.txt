@@ -1,7 +1,7 @@
-Javascript it is a language which is understance by all browser
-it's the only language which you can used for frontend
+Javascript it is a language which is understand by all browser.
+it's the only language which you can used for frontend.
 
-we will talks about the backedn which we used Node js. which is started in 2009 it allows the chrome v8 engine to run 
+we will talks about the backend which we used Node js. which is started in 2009 it allows the chrome v8 engine to run 
 on the back end.
 
 At the end of the course you will be a full-stack software engineers.
@@ -11,3 +11,43 @@ Schedule:
 week1: Backend 
 week2: Frontend (and backend)
 week3: Personal Projects.
+
+Lecture 0 : Diving into JavaScript.
+
+Javascript is interpreted language.
+
+* Each browser has its own javascript engine, which is either interpret the code, or uses some sort of lazy compilation
+  * V8: chrome and Node.js
+  * spiderMonkey: Firefox
+  * JavascriptCore: Safari
+  * chakra: Microsoft Edge/interpret
+
+They each implement the ECMAScript standard, but may differ for anything not defined by the standard.  
+
+ECMO stands for the Europen computer Manufacture Association and they're in charge 
+of writting a standard for the language .
+
+* Types
+ * Dynamic typing 
+
+ * Premitive types (no methods)
+
+    * undefined 
+    * null
+    * boolean
+    * number
+    * string
+    * (symbol)
+* Objects    
+
+Typecasting? Corercion 
+* Explicit vs. Implicit Coercion
+
+ * var x = 42;
+ var explicit = string(x);  // explicit === "42"
+ var implicit = x + "";    // implicit === "42"
+
+ == Vs. ===
+
+ * == coerces the types
+ * === requires equilent types
