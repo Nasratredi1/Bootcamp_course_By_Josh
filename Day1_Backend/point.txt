@@ -1,0 +1,57 @@
+Backend Lecture No 3 Intro to Node and Express.
+
+Exporting from Node Script.
+* Used module.exports and exports.
+
+importing into Node Script.
+* require() 
+  => if passed a path, it will run the script.
+  => if passed a string, it will look in node_modules.
+
+
+  Node Modules:
+
+  Similar to liberaries in C or Python.
+  More than 350,000 modules in the NPM registry
+
+  NPM( Node package Manager like liberaries in C)
+
+  * Node package Manager.
+  * Automate installing, upgrading, removing moduels.
+  * INstall package with npm install [-g] <package_name> if you want to install this gloabally.
+  * Manage your own configuaration file withing `package.json`.
+
+  Package.json
+
+  * Defines configuaration for your application.
+  * Full documenatition at (https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
+  * Some tags define metadata: name, version, author.
+  * Define scripts in "scripts" object
+  * Track dependencies and devDependencies.
+
+  NPM Commonds
+
+  * 'npm install' installs all dependencies.
+  * 'npm install --save <package>' installs package and adds to package.json
+  * 'npm run <script_name>' runs <script_name> from the scripts object.
+
+  Express.
+  * Minimalist web application framework.
+  * very lightweights very fast and it's very similar to flask and python.
+  * very powerful routing system
+  * hello_Express.js.
+
+  * HTTP method so what are some HTTP methods we have, get, post,put, delete  .
+
+  callback function: sending up an event listener so it's listening for something if it gets invoked that path
+  under cetian method and if it does it'll invoke its callback and so method is an all lowercase HTTP method.
+
+  * if you want to not upload the nodemodule into github repo then make a file by the name of .gitignore and 
+  write code (node_modules/) 
+
+  **************** copieng one file into another file(new file).***************
+  cp hello_express.j app.js  // they create new file app.js and paste the content of hello_express.js
+
+
+***************** express documentation************
+https://expressjs.com/en/starter/hello-world.html
