@@ -1,6 +1,0 @@
-Premitive vs. Objects
-
-* Primitive are immutable
-* Objects are mutable and stored by reference
-
-* passing by reference Vs passing by value.

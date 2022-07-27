@@ -55,3 +55,52 @@ importing into Node Script.
 
 ***************** express documentation************
 https://expressjs.com/en/starter/hello-world.html
+
+
+
+*************** what is Node js and is the advantage of Node js*******************
+* Node js is a JavaScript engine or you can think it is a interpretor of JavaScript 
+it allow the server to understand the JavaScript code that you write. We use his for
+ client side and node for server side for server we can used python, PHP,ruby and rails or Node js.
+
+ * One of the big advantage of Node js is that you can used in frontend and backend both one language
+  which is Js you don't need to used multiple languages like if you used python in backend and frontend 
+  you used js for that you have to switch it.
+
+* Another big advantage of Node js is very very fast it's a synchronous they dispatch request and start 
+working on buch of other request and say a hundred thousand request come at once. This request go to that ... 
+They don't need to have  wait to return before hitting another request.
+
+* And other languages like PHP is not an asynchronous  it has to finish one request by before getting to the other one.
+
+* Most company used Node js, like Walmart other companies which used PHP all the time the server become crashed and can handle many 
+requests at once.  They always used to use PHP But server is not workable when they shift to Node and write server on node when they shift
+ 40% more user came to their side.
+
+* for sending HTTP request to server we used curl in terminal and used Postman software also.
+
+****************HTTP status codes***************
+
+200 Ok.
+301 Moved permanantly.
+302 Found
+304 Not Modified
+400 invalid request
+401 unauthorized 
+403 Forbidden 
+404 Not Found
+500 internal server error.
+
+**************** HTTP 4 Action Methods*********
+         CRUD (create, read,update,delete )
+GET = get or create
+POST = create 
+PUT = update
+DELETE = delete 
+
+* morgan allow to log request
+* bodyparse: parse the json in the body.
+
+var app = express(); // create an instance.
+
+* for database we are choosing to use an array

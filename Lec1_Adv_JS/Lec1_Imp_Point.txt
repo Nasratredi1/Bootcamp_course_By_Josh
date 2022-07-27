@@ -1,0 +1,134 @@
+Premitive vs. Objects
+
+* Primitive are immutable
+* Objects are mutable and stored by reference
+
+* passing by reference Vs passing by value.
+
+First class Function
+
+* function are treated the same way as Objects 
+  => can be assigned to variables, array values, object values
+  => can be passed as arguments to other functions
+  => can be returned from function.
+
+* Allows for the creation of higher order  function.
+  => either takes one or more functions as arguments or returns a function
+  => map(), filter(), reduce()
+
+  search map array javascript and read the documentation.  
+  practic on terminal below (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+
+var x = [0 ,1,2,3]
+undefined
+> x
+[ 0, 1, 2, 3 ]
+> x.map
+[Function: map]
+> function addOne(x) {
+... return x + 1;}
+undefined
+> addOne(1)
+2
+> x.map(addOne)
+[ 1, 2, 3, 4 ]
+
+filter function( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+function isBigEnough(value) {
+  return value >= 10
+}
+
+let filtered = [12, 5, 8, 130, 44].filter(isBigEnough)
+// filtered is [12, 130, 44]
+
+
+another ex:
+> x
+[ 0, 1, 2, 3 ]
+> var xFiltered = x.filter(function(x) { return (x % 2) === 0})
+undefined
+> x
+[ 0, 1, 2, 3 ]
+> xFiltered
+[ 0, 2 ]
+
+
+Reducer Function( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+> x
+[ 0, 1, 2, 3 ]
+> function accumulate(prevTotal, newValue){ return prevTotal + newValue;}
+undefined
+> x.reduce(accumulate, 0)
+6
+> x.reduce(accumulate, 2)
+8
+
+
+*************** Synchronous? Async? Single threaded? multi Thereded.
+
+Javascript is single threaded and Synchronous language.
+
+* it means that a function that takes a long time to run will cause a page to become 
+unresponsive. it means that if you hava a function that takes a really long time it'll 
+actually block everything else from running. 
+* JS has functions that act asynchronously.
+
+You can see the Date in console by using below data
+new Date()
+and you can see the data and time using below
+function hang(seconds) {
+  var now = new Date().getTime();
+  while(new Date().getTime() < now + (seconds * 1000))
+  {}
+}
+}
+
+hang (10)// everything is hang for 10 second ia not working
+
+Asynchronous Javascript
+*  Execution Stack
+* Browser APIs  ( SetTimeOut and SetInterval come in B API's)
+* Function Queue
+*  Event Loop
+
+* setTimeOut: Means run this code after some sort of MilliSeconds set Intervel means run this code evey number of milliseconds 
+
+* AJAX: is making a network request
+
+* if you want to delay of one seconds but actually blocked everything else for that one second so that's why that thing called 
+a browser API and the browser API take care of that timeout for you meaning . 
+whenever that time is become completed then put's callback function onto the function queue.
+that's way all your code asynchronously.
+
+So when these actually get run by the browser the event Loop take care of that.
+and as soon as the stack is cleared then it's says hey I'm ready to do something else.
+give me something.
+
+* So there's three different staging area where function are ready to run so ther's the actual execuation stack which
+for all the synchronous functions. then is a browser API where the browser kind of dispatch off to the browser to do whatever the spec is 
+and there is a function queue which is where other functions go after the browser API don with them.
+
+
+* Callbacks
+  => controls flow with asynchronous Callbacks.
+  * Execute function once asynchronous call returns value 
+   * program doesn't have to halt and wait for value.
+
+* Asynchronous Javascript
+
+ => Asynchronous functions 
+  * setTimeout()
+  * XMLHttpRequest(),JQuery.ajax(), fetch()
+  * Database calls
+
+  Lecure revision:
+
+
+  callbacks meaning function ki andar 1 function hongy.
+
+  setTimeOut() fun is also is a callbacks function.
+
+  callback function might be synchoronous or Asynchronous.
+  forEach() is a synchoronous
+  setTimeOut() is a asynchoronous(work done in background )
