@@ -1,0 +1,13 @@
+private: true meaning in package.json
+
+If you set "private": true in your package.json, then npm will refuse to publish it.
+
+This is a way to prevent accidental publication of private repositories
+
+*********** Diff b/w production and development server********  when code runs in one of them this is called envirnment variable.
+
+// https://nodejs.dev/learn/nodejs-the-difference-between-development-and-production
+
+* production server is publically available like www.google.com  it seems available to all the people. think like that 
+ it is a computer connected to the rest of the word. while dev server is avilable to certain people.
+* dev server is privatly available.   is a testing evirnment

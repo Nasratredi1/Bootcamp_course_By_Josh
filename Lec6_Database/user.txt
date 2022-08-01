@@ -1,0 +1,16 @@
+firstName
+lastName
+address
+classYear
+email
+phone
+phoneProvider
+vermo
+isAdmin
+isSuperAdmin
+hash
+companyName
+createDate
+updateDate
+interests
+timeSpent.

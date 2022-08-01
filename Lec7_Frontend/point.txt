@@ -1,0 +1,51 @@
+MVC (Model, veiw, controller)
+* Design and organizational pattern for creating application. ( to stay organize on the server)
+* separating data, visuals, and logic into components.
+* Model manage data and information
+* Veiws manage visual representation into templates.
+* Controllers manage UI and translates into logic.
+
+********************* The Tools that frontend Engineer used *********************
+ 1) Templating Engines
+ 2) CSS Preprocessors
+ 3) Javascript libraies
+ 4) Javascript frameworks
+ 5) Task Runners
+
+*******************Templating Engines ************
+for Node js or javascript
+* pug(jude),Mustache, EJS,Handlebars,Haml, ect
+* for python we used Jinga.
+* Simplifies the process of writting HTML
+* Keeps files consistent and organized
+* Speeds up development.
+* Example of Pug code.
+
+****************** CSS Preprocessors *********************
+ * Stylus, Sass , SCSS, LESS
+ * Simplifies the process of writting CSS
+ * Adds basic logic to CSS
+  * variables
+  * if else statemen
+  *loops
+  * Mahts
+  * imports
+
+
+Difference between liberaries and frameworks.
+you may heard this term mostly there is a slight distinction.
+Library: they give you tools that you can use whereas framework is a bare-bones applcation that you
+can extend to.
+so the difference is called the liberary code whereas the frameworks calls your code.
+
+**************** Javascript liberaries *******************
+* jQuery, Underscore, D3, Moment, etc.
+* Give you a et of toolls that you can call at will
+* generally cross-browser supported
+* can make code easier to read
+* can speed up development..
+
+*********************** JAVASCRIPT FRAMEWORKS  ***********************************
+* Angular 1 & 2, React, Ember, Meteor, Backbone, etc.
+* Gives you a skeleton application that you can extend with own code
+* Virtual DOM maniplation, data binding, componentzed.

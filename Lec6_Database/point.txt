@@ -1,0 +1,60 @@
+Read docs below
+https://mongoosejs.com/ 
+
+read that docs for schema
+https://mongoosejs.com/docs/guide.html
+
+
+************ hook ************
+it's a function that is called when something happens and it just listens for something to happen and so 
+we have here user name dot pre save this function so that means before we save something before we put it into 
+the database run this code.
+
+****************** Structure of the folder **********************
+we divide everything split up into different folders for organizational reason.
+
+* so we controllers which keeps track of all of out logic and 
+* we have models which keep track of all of like information.
+*  and so the logic is called the controllers.\
+* model is what' s the info so all controllers file have logic while model have information.
+
+* so we try to keep our logic and are like hard-coded values separate
+
+* database file which is coupenapi.js file..
+
+* const mongoose = require('mongoose');   // this means import Mongoose into our file.
+
+* npm install --save mongoose // automatically add it to out package.json and also install it.
+
+* database is running on 5000 localhost.
+
+in user.js last line explanition
+var User = mongoose.model('User', userSchema); // mean create the model or a database based on the user scheme that difined above because use schema is defined right user schema is on line 5 above in user.js
+
+module.exports = User;
+
+LEC 7 group coding working on the coupen-API
+
+findBYID Mongoose it creates
+
+* if we revised middleware lecture.
+every middleware has access to the request object the response object and the next chain then next minute we're in the sequance.
+
+* app.use(function(error,req,res,next){
+
+});
+
+the above code explanition
+this is a middleware (search about it)
+
+request object is req and response is res and out next callback is res
+
+* lec 7 1:00:06 
+
+* there is a two server running on out computer one is node web server which we create it.
+and another one is MOngoDB server that's running. and each server all it does is recieve request 
+and return responses. but you need to it where to listen to and the way to do that is to deifine a 
+port 
+
+
+
